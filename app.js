@@ -1,4 +1,3 @@
-
 const express = require('express');
 const cors = require('cors'); 
 const app = express();
@@ -34,7 +33,7 @@ connectDB();
 
 
 //serving the angular app
-app.use(express.static(__dirname + '/dist/MVVPIC'))
+app.use(express.static(__dirname + '/dist/mvvpic'))
 app.get('*',(req,res,next)=>{
     res.sendFile(path.join(__dirname));
    
